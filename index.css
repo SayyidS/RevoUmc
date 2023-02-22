@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 1366px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #0069d9c5;
+}
+
+.navbar{
+    display: inline-block;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin-left: 6em;
+    margin-top: 1.5em;
+    margin-right: 8em;
+}
+
+nav img {
+    margin-top: 1em;
+    margin-left: 5em;
+    margin-bottom: 1em;
+    width: 50px;
+    height: 50px;
+}
+
+.nav-kiri{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.nav-kanan{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+li a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0.5em 2.5em;
+    background-color: #98b9db;
+    border: 1px solid white;
+}
+body{
+    background-image: url(img/books29.jpg);
+    /*source : https://pixabay.com/photos/books-stack-white-stack-of-books-1845614/*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.container{
+    background-color: white;
+    opacity: 0.8;
+    margin-top: 1em;
+    margin-left: 10em;
+    margin-right: 10em;
+    padding: 1em;
+    min-height: 562px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.2);
+}
+.container p{
+    margin-top: 1em;
+}
+.container img{
+    margin-top: 3em;
+    opacity: 100%;
+    width: 300px;
+    height: 200px;
+}
+
+.headquarter{
+    background-color: white;
+    opacity: 0.8;
+    margin-top: 2em;
+    margin-left: 10em;
+    margin-right: 10em;
+    border-radius: 5px;
+    padding-bottom: 2em;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.2);
+}
+section h1{
+    padding-top: 1em;
+    margin-left: 1em;
+}
+
+.card{
+    display: inline-block;
+    text-align: center;
+    margin-top: 2em;
+    margin-left: 4em;
+    font-weight: bold;
+}
+
+.card img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+}
+
+.container2{
+    margin-top: 2em;
+    padding-bottom: 5em;
+}
+form{
+    background-color: white;
+    opacity: 0.7;
+    margin-left: 10em;
+    display: inline-block;
+    width: 35%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.2);
+}
+form h1{
+    margin-left: 10px;
+}
+label{
+    display: inline;
+    margin-left: 1em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="date"],
+textarea{
+    display: flex;
+    margin-left: 1em;
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+    font-size: 16px;
+}
+textarea{
+    height: 150px;
+}
+
+input[type="radio"]{
+    margin-top: 1em;
+    margin-left: 1.5em;
+    margin-bottom: 1em;
+    display: inline-block;
+}
+input[type="submit"]{
+    display: block;
+    margin-left: 11.5em;
+    margin-bottom: 1em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+input[type="submit"]:hover{
+    background-color: #0069d9c5;
+}
+.kotakpesan{
+    background-color: white;
+    opacity: 0.7;
+    display: inline-block;
+    margin-left: 4.8em;
+    margin-right: 10em;
+    width: 34%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.2);
+    vertical-align: top;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-bottom: 10em;
+}
+footer {
+    background-color: white;
+    color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: end;
+}
+footer p{
+    margin-right: 2em;
+}

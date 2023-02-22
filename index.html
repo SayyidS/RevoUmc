@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav>
+        <img src="img/revou.png" alt="RevoU">
+        <ul class="navbar">
+            <li><a class="nav-kiri" href="#home">Home</a></li>
+            <li><a href="profile.html">Our Profile</a></li>
+            <li><a href="#headquarter">Portofolio</a></li>
+            <li><a class="nav-kanan" href="#pesan">Message Us</a></li>
+        </ul>
+    </nav>
+    <div id="home" class="container">
+        <h3>Hi <span id="nama"></span>, Welcome To Our Website</h3>
+        <p>Ini adalah website project pertama untuk menampilkan Clothing Bussiness Property 
+        Company kami.</p>
+        <img src="img/clothes-1.jpg" alt="">
+        <img src="img/clothes-2.jpg" alt="">
+        <img src="img/clothes-3.jpg" alt="">
+    </div>
+    <section id="headquarter" class="headquarter">
+        <h1>Our Headquarter</h1>
+        <div class="card">
+            <img src="img/jakarta-city1.jpg" alt="Jakarta">
+            <p>Jakarta</p>
+        </div>
+        <div class="card">
+            <img src="img/bandung-city1.jpg" alt="Bandung">
+            <p>Bandung</p>
+        </div>
+        <div class="card">
+            <img src="img/surabaya-city1.jpg" alt="Surabaya">
+            <p>Surabaya</p>
+        </div>
+    </section>
+    <div id="pesan" class="container2">
+        <form class="message-form" name="message-form" onsubmit="return validateForm()">
+            <h1>Message Us</h1>
+            <label for="name">Nama : </label>
+            <input type="text" id="" name="full-name">
+            <br>
+            <label for="tanggal">Tanggal Lahir : </label>
+            <input type="date" id="tanggal" name="birth-date">
+            <br>
+            <label for="gender">Jenis Kelamin :</label>
+            <br>
+            <input type="radio" name="gender" id="laki-laki" value="laki-laki">
+            <label for="laki-laki">Laki-laki</label>
+            <input type="radio" name="gender" id="perempuan" value="perempuan">
+            <label for="perempuan">Perempuan</label>
+            <br>
+            <label for="pesan">Pesan : </label>
+            <textarea placeholder="Ketik di sini" name="messages"></textarea>
+            <br>
+            <input type="submit" value="Submit" onclick="outputDate()">
+        </form>
+        <div class="kotakpesan">
+            <p>Nama : <span id="sender-name"></span></p>
+            <br>
+            <p>Tanggal Lahir : <span id="sent-date"></span></p>
+            <br>
+            <p>Jenis Kelamin : <span id="sender-gender"></span></p>
+            <br>
+            <p>Pesan : <span id="sender-messages"></span></p>
+        </div>
+    </div>
+    <footer>
+        <p>Created by Sayyid. @ZeroWorks</p>
+    </footer>
+    <script>
+        let ganti = prompt("Masukkan nama kamu");
+        document.getElementById("nama").innerHTML = ganti;
+        function validateForm(){
+            const name1 = document.forms["message-form"]["full-name"].value;
+            const birthdate = document.forms["message-form"]["birth-date"].value;
+            const gender = document.forms["message-form"]["gender"].value;
+            const messages = document.forms["message-form"]["messages"].value;
+
+            if (name1 == "" || birthdate == "" || gender == "" || messages == "" ){
+                alert('tidak boleh ada yang kosong');
+                return false;
+            }
+            setSenderUI(name1, birthdate, gender, messages);
+            return false;
+        }
+        function setSenderUI(name1, birthdate, gender, messages){
+            document.getElementById("sender-name").innerHTML = name1;
+            document.getElementById("sent-date").innerHTML = birthdate;
+            document.getElementById("sender-gender").innerHTML = gender;
+            document.getElementById("sender-messages").innerHTML = messages;
+        }
+    </script>
+</body>
+</html>
