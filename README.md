@@ -6,7 +6,7 @@ and this is a mini coding project for RevoU assignment.
 
 Kekurangan:
 -komen pada kode.
--mobile responsive.
+-mobile responsive kurang.
 
 Kendala:
 keterbatasan waktu sehingga tidak lengkap/rapih.
