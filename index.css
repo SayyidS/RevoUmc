@@ -68,12 +68,6 @@ body{
 .container p{
     margin-top: 1em;
 }
-.container img{
-    margin-top: 3em;
-    opacity: 100%;
-    width: 300px;
-    height: 200px;
-}
 
 .headquarter{
     background-color: white;
@@ -189,4 +183,29 @@ footer {
 }
 footer p{
     margin-right: 2em;
+}
+
+/*responsive desktop*/
+@media only screen and (max-width: 1024px){
+    .container h3{
+        font-size: 48px;
+    }
+    .container img{
+        margin-top: 3em;
+        width: 300px;
+        height: 200px;
+    }
+}
+/*responsive mobile*/
+@media only screen and (max-width: 600px){
+    .container h3{
+        font-size: 24px;
+    }
+    .container img{
+        display: flex;
+        margin-left: 10em;
+        margin-top: 3em;
+        width: 600px;
+        height: 400px;
+    }
 }
